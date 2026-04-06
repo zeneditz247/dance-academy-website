@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zen Dance Academy</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      line-height: 1.6;
+    }
+
+    /* HERO WITH YOUR IMAGE */
+    .hero {
+      height: 100vh;
+      background: url('bg.jpg') no-repeat center center/cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      position: relative;
+    }
+
+    /* DARK OVERLAY (important for text visibility) */
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.6);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      padding: 20px;
+    }
+
+    .hero h1 {
+      font-size: 2.8rem;
+      letter-spacing: 3px;
+    }
+
+    .hero p {
+      margin: 15px 0;
+    }
+
+    .btn {
+      display: inline-block;
+      background: red;
+      color: white;
+      padding: 12px 25px;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    /* SECTION */
+    .section {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .classes button {
+      margin: 10px;
+      padding: 10px 20px;
+      border: none;
+      background: #eee;
+      border-radius: 8px;
+    }
+
+    footer {
+      background: black;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>ZEN DANCE ACADEMY</h1>
+      <p>Feel the Beat. Own the Dance.</p>
+      <a href="#contact" class="btn">Join Now</a>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section">
+    <h2>About Us</h2>
+    <p>
+      Zen Dance Academy is a professional dance studio focused on
+      building confidence, creativity, and performance skills.
+    </p>
+  </section>
+
+  <!-- CLASSES -->
+  <section class="section">
+    <h2>Our Classes</h2>
+    <div class="classes">
+      <button>Hip Hop</button>
+      <button>Classical</button>
+      <button>Freestyle</button>
+      <button>Contemporary</button>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <h2>Contact Us</h2>
+    <p>📍 Chennai, India</p>
+    <p>📞 9876543210</p>
+    <p>📧 zendance@email.com</p>
+  </section>
+
+  <footer>
+    © 2026 Zen Dance Academy
+  </footer>
+
+</body>
+</html>
